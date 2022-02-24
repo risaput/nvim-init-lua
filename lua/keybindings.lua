@@ -13,8 +13,8 @@
     map('i', shortcut, command)
   end
   
-  --shortcut for nerdtree
-  nmap("<C-b>", ":NERDTreeToggle<CR>")
+  --shortcut for nvim-tree
+  nmap("<C-b>", ":NvimTreeToggle<CR>")
   
   -- Shortcut for move to end of line
   nmap("0", "$")
@@ -28,4 +28,3 @@
   nmap("<C-Right>", ":'<,'>norm i  <CR>")
   nmap("<C-Left>", ":'<,'>norm x<CR>")
   nmap("<C-n>", ":tabnew ")
-
