@@ -3,7 +3,7 @@
 
   -- Colorscheme
   vim.opt.termguicolors = true
-  vim.cmd("colorscheme codedark")
+  vim.cmd("colorscheme melange")
   vim.opt.omnifunc = "syntaxcomplete#Complete"
   
   -- Tab
@@ -16,4 +16,5 @@
   vim.opt.linebreak = true
   vim.opt.autoindent = true
   vim.opt.smartindent = true
-  vim.opt.number = true 
+  vim.opt.number = true
+  vim.opt.cul = true

@@ -3,6 +3,7 @@ return require('packer').startup(function()
   
   -- ADDITIONAL PLUGINS -- 
   use "tomasiser/vim-code-dark"
+  use "savq/melange"
   use "pangloss/vim-javascript"
   use "prabirshrestha/asyncomplete.vim"
   use "prabirshrestha/asyncomplete-emmet.vim"

@@ -27,4 +27,3 @@
   --shortcut for block tab
   nmap("<C-Right>", ":'<,'>norm i  <CR>")
   nmap("<C-Left>", ":'<,'>norm x<CR>")
-  nmap("<C-n>", ":tabnew ")
