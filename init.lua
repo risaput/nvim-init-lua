@@ -1,25 +1,17 @@
 return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
-  
-  -- ADDITIONAL PLUGINS -- 
-  use "tomasiser/vim-code-dark"
-  use "savq/melange"
-  use "pangloss/vim-javascript"
-  use "prabirshrestha/asyncomplete.vim"
-  use "prabirshrestha/asyncomplete-emmet.vim"
-  use "yami-beta/asyncomplete-omni.vim"
-  use "tpope/vim-commentary"
-  use "mattn/emmet-vim" 
+
+  use 'dracula/vim'
   use 'kyazdani42/nvim-tree.lua'
-  vim.g.nvim_tree_indent_markers = 1
+  use 'pangloss/vim-javascript'
+  use 'tpope/vim-commentary'
+  use 'tpope/vim-fugitive'
+  use "mattn/emmet-vim"
+  use 'skywind3000/vim-auto-popmenu'
+  use 'skywind3000/vim-dict'
   require'nvim-tree'.setup()
 
-  -- ADDITIONAL SETTINGS --
-  require('settings')
-  require('plugins-setting')  
-  require('statusline')
-  require('keybindings')
-  
+  require'mapping'
+  require'setting'
   vim.cmd("set clipboard=unnamed")
-
 end)
