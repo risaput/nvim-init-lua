@@ -3,6 +3,7 @@ vim.opt.termguicolors = true
 vim.opt.background = "dark"
 vim.g.dracula_italic = 0
 vim.cmd("colorscheme dracula")
+vim.cmd("hi Normal guibg=#191D2B")
 vim.opt.omnifunc = "syntaxcomplete#Complete"
 
 -- Tab
@@ -15,6 +16,9 @@ vim.opt.breakindent = true
 vim.opt.linebreak = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
+
+--Coopy to system clipboard
+vim.cmd("set clipboard=unnamed")
 
 -- UI
 vim.opt.number = true
@@ -42,6 +46,7 @@ vim.cmd([[
   set cpt=.,k,w,b
   set completeopt=menu,menuone,noselect
   set shortmess+=c
+  let g:apc_cr_confirm = 1
 ]])
 
 -- Emmet vim
