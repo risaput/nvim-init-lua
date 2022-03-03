@@ -10,19 +10,6 @@ function imap(shortcut, command)
   map('i', shortcut, command)
 end
 
-
--- Neo scrolling
-require('neoscroll').setup({
-    -- Set any options as needed
-})
-
-local t = {}
--- Syntax: t[keys] = {function, {function arguments}}
-t['<C-j>'] = {'scroll', {'-vim.wo.scroll', 'true', '250'}}
-t['<C-k>'] = {'scroll', { 'vim.wo.scroll', 'true', '250'}}
-
-require('neoscroll.config').set_mappings(t)
-
 --shortcut for nvim-tree
 nmap("<C-b>", ":NvimTreeToggle<CR>")
 

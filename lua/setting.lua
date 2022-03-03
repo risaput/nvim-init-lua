@@ -12,13 +12,15 @@ vim.opt.expandtab = true
 vim.opt.shiftwidth = 2
 
 -- Indent
+--vim.opt.breakat = "^I!@*-+;:,./?"
+vim.opt.breakindentopt = "shift:2"
 vim.opt.breakindent = true
 vim.opt.linebreak = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
 
 --Coopy to system clipboard
-vim.cmd("set clipboard=unnamed")
+vim.opt.clipboard = "unnamed"
 
 -- UI
 vim.opt.number = true
